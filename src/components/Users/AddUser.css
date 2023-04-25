@@ -1,0 +1,39 @@
+form {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+input {
+    width: 35vw;
+    height: 1.5rem;
+    font-size: 1rem;
+}
+
+button {
+    color: white;
+    border-radius: 0;
+    background-color: purple;
+    border: 1px solid black;
+    padding: 0.25rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+button:hover {
+    background-color: rgb(107, 0, 107);
+}
+
+button:active {
+    transform: scale(0.95);
+}
