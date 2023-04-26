@@ -15,25 +15,8 @@ label {
 
 input {
     width: 35vw;
+    max-width: 40rem;
+    min-width: 15rem;
     height: 1.5rem;
     font-size: 1rem;
-}
-
-button {
-    color: white;
-    border-radius: 0;
-    background-color: purple;
-    border: 1px solid black;
-    padding: 0.25rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: transform .3s;
-}
-
-button:hover {
-    background-color: rgb(107, 0, 107);
-}
-
-button:active {
-    transform: scale(0.95);
 }
