@@ -12,10 +12,16 @@ function App() {
       })
     }
 
+    const deleteUserFromList = (event) => {
+      console.log(usersList)
+      console.log(event.target.username)
+      console.log(usersList.filter(item => {return item.username==='aa'}))
+    }
+
   return (
     <div>
       <AddUser datas={addUserToList}/>
-      <UsersList users={usersList}/>
+      <UsersList users={usersList} deleteLi={deleteUserFromList}/>
     </div>
   );
 }

@@ -8,7 +8,7 @@ const UsersList = (props) => {
         <Card>
             <ul className={styles.userUl}>
                 {props.users.map(user => {
-                    return (<li className={styles.userLi} key={user.id}>{user.username} ({user.age} years old)</li>)
+                    return (<li className={styles.userLi} key={user.id} onClick={props.deleteLi}>{user.username} ({user.age} years old)</li>)
                 })}
             </ul>
         </Card>
