@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Card from '../UI/Card.js'
 import styles from '../UI/Card.module.css'
+import DivForDelete from './DivForDelete.js';
 
 const UsersList = (props) => {
 
@@ -8,7 +9,15 @@ const UsersList = (props) => {
         <Card>
             <ul className={styles.userUl}>
                 {props.users.map(user => {
-                    return (<li className={styles.userLi} key={user.id} onClick={props.deleteLi}>{user.username} ({user.age} years old)</li>)
+                    return (
+                        <DivForDelete
+                            key={user.id}
+                            id={user.id}
+                            onDelete={props.onDeleteItem}
+                        >
+                            {user.username} ({user.age} years old)
+                        </DivForDelete>
+                    )
                 })}
             </ul>
         </Card>
