@@ -12,10 +12,10 @@ function App() {
       })
     }
 
-    const deleteUserFromList = (chuj) => {
+    const deleteUserFromList = (itemID) => {
       console.log(usersList)
       setUsersList(prevList => {
-        const newList = prevList.filter(item => item.id != chuj)
+        const newList = prevList.filter(item => item.id != itemID)
         return newList
       })
     }

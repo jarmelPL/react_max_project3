@@ -2,8 +2,9 @@ import React from 'react';
 import styles from '../UI/Card.module.css'
 
 const DivForDelete = (props) => {
+
     const deleteHandler = () => {
-        props.onDelete(props.key)
+        props.onDelete(props.id)
     }
 
     return (
